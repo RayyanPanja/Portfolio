@@ -1,0 +1,27 @@
+:root{
+    --primary-clr: #323232;
+    --secondary-clr: #252525;
+    --accent-clr: #02de58;
+    --invert-clr: #ededed;
+    --font-clr: #efefef;
+    --btn-padding: 5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-clr);
+}
+*::selection{
+    background: var(--accent-clr);
+    color: var(--secondary-clr);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background: var(--primary-clr);
+}
