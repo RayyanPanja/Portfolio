@@ -1,0 +1,20 @@
+@import url(root.css);
+@import url(navbar.css);
+@import url(style.css);
+
+/* Navbar */
+@media screen and (max-width: 660px) {
+    .link-set{
+        display: none;
+    }
+    .side-nav{
+        width: 100%;
+    }    
+    .bar-set {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        background-color: transparent;
+    }
+}

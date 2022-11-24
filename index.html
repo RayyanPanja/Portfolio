@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body id="home">
+
+<body>
     <nav class="navbar">
-        <div class="logo"><h1>Ray</h1></div>
-        <div class="link-set">
-            <a href="#home" class="link">Home</a>
-            <a href="#about" class="link">About me</a>
-            <a href="#skills" class="link">Skills</a>
-            <a href="#education" class="link">Education</a>
+        <div class="logo">
+            <h1>Rayyan</h1>
         </div>
+        <div class="link-set">
+            <div class="link-item">
+                <a href="#home" class="link">Home</a>
+                <div class="active-link"></div>
+            </div>
+            <div class="link-item">
+                <a href="#about" class="link">About me</a>
+            </div>
+            <div class="link-item">
+                <a href="#skills" class="link">Skills</a>
+            </div>
+            <div class="link-item">
+                <a href="#project" class="link">Projects</a>
+            </div>
+            <div class="link-item">
+                <a href="#education" class="link">Education</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)">
+            <div class="bar-set" id="side-nav-open">
+                <span class="bar"></span>
+            </div>
+        </a>
     </nav>
 
-    
+    <dialog class="side-nav" id="side-nav">
+        <div class="side-link-set">
+            <a href="#home" class="side-link">Home</a>
+            <a href="#about" class="side-link">About me</a>
+            <a href="#skills" class="side-link">Skills</a>
+            <a href="#education" class="side-link">Education</a>
+        </div>
+    </dialog>
+
+    <header id="home" class="hero">
+        <p class="subtitle">Your Scroll Will not Work Use Navigation Links....</p>
+        <!-- <img src="" alt="hero" class="hero-img"> -->
+        <div class="greet">
+            <h1>Rayyan Panja</h1>
+            <h3>Web Developer</h3>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <div class="heading">
+            <h1>About Me</h1>
+            <p>Hi My Name is Rayyan Panja , I am a Web Developer , i Specialize in both Front End and Back End , i have
+                made many Projectes in Past <a href="">Go Check Them Out</a></p>
+        </div>
+        <div class="social">
+            <div class="social-link">
+                <a href="https://github.com/RayyanPanja">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.instagram.com/rayyanpanja0_0/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/rayyan-panja-608757251">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
 </body>
 <script src="assets/javascript/main.js"></script>
+<script src="assets/javascript/animate.js"></script>
+
 </html>

@@ -1,3 +1,83 @@
 @import url(root.css);
 @import url(navbar.css);
 @import url(media.css);
+
+/* Hero Section... */
+.hero {
+    width: 100%;
+    padding: 5px;
+    height: 100vh;
+    position: relative;
+    background: var(--primary-clr);
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.greet {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.greet h1 {
+    font-size: 55px;
+}
+
+.greet h3 {
+    font-size: 35px;
+}
+
+/* Hero Section...Ends */
+
+/* About Me... */
+.heading {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+
+.heading h1 {
+    font-size: 5rem;
+}
+
+.heading p {
+    width: 55%;
+}
+
+.heading p::first-letter {
+    font-size: 30px;
+    color: var(--accent-clr);
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+.social-link{
+    padding: 5px;
+}
+.social i{
+    font-size: 30px;
+    transition: all 500ms;
+    border: 3px solid var(--secondary-clr);
+    border-radius: 50%;
+    padding: 10px;
+}
+.social i:hover{
+    color: var(--accent-clr);
+}
+
+
+/* About Me...Ends */
