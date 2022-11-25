@@ -34,6 +34,9 @@
             <div class="link-item">
                 <a href="#education" class="link">Education</a>
             </div>
+            <div class="link-item">
+                <a href="#contact" class="link">Contacts</a>
+            </div>
         </div>
         <a href="javascript:void(0)">
             <div class="bar-set" id="side-nav-open">
@@ -43,17 +46,19 @@
     </nav>
 
     <dialog class="side-nav" id="side-nav">
+        <button class="side-nav-close-btn" id="side-nav-close">X</button>
         <div class="side-link-set">
             <a href="#home" class="side-link">Home</a>
             <a href="#about" class="side-link">About me</a>
             <a href="#skills" class="side-link">Skills</a>
             <a href="#education" class="side-link">Education</a>
+            <a href="#contact" class="side-link">Contacts</a>
         </div>
     </dialog>
 
     <header id="home" class="hero">
         <p class="subtitle">Your Scroll Will not Work Use Navigation Links....</p>
-        <!-- <img src="" alt="hero" class="hero-img"> -->
+        <!-- <img src="assets/images/hero.png" alt="hero" class="hero-img"> -->
         <div class="greet">
             <h1>Rayyan Panja</h1>
             <h3>Web Developer</h3>
@@ -61,35 +66,99 @@
     </header>
     <section class="about" id="about">
         <div class="heading">
-            <h1>About Me</h1>
-            <p>Hi My Name is Rayyan Panja , I am a Web Developer , i Specialize in both Front End and Back End , i have
-                made many Projectes in Past <a href="">Go Check Them Out</a></p>
+            <h1 id="title">
+                About Me
+            </h1>
+            <p>Hi My Name is Rayyan Panja , I am a Web Developer , I am From Veraval-362265, Gujarat, India ,i
+                Specialize in both Front End and Back End , i have
+                made many Projectes in Past <a href="#project">Go Check Them Out</a></p>
         </div>
         <div class="social">
             <div class="social-link">
-                <a href="https://github.com/RayyanPanja">
+                <a target="_blank" href="https://github.com/RayyanPanja">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="social-link">
-                <a href="https://www.instagram.com/rayyanpanja0_0/">
+                <a target="_blank" href="https://www.instagram.com/rayyanpanja0_0/">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="social-link">
-                <a href="https://www.linkedin.com/in/rayyan-panja-608757251">
+                <a target="_blank" href="https://www.linkedin.com/in/rayyan-panja-608757251">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
             </div>
-
-
         </div>
-
+    </section>
+    <section id="skills" class="skills">
+        <div class="heading">
+            <div class="skill-set">
+                <div class="skill">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                </div>
+                <h1 id="skilltitle">
+                    Skills
+                </h1>
+                <div class="skill">
+                    <p>Php</p>
+                </div>
+                <div class="skill">
+                    <p>JQuery</p>
+                </div>
+                <div class="skill">
+                    <p>SQL</p>
+                </div>
+            </div>
+        </div>
+        <p class="subtitle">Click on Skills</p>
     </section>
 
+    <section id="project" class="projects">
+        <div class="heading">
+            <h1>My Projects</h1>
+        </div>
+        <div class="project-grid">
+            <div class="project-details">
+                <img src="assets/images/web-wallet.png" alt="Web Wallet" class="detail-img">
+                <h1>Web Wallet</h1>
+                <a href="https://github.com/RayyanPanja/Web-Wallet-Version-4-" target="_blank"><i
+                        class="fa fa-github">Available on Github</i></a>
+            </div>
+            <div class="project-details">
+                <img src="assets/images/portfolio.png" alt="Portfolio" class="detail-img">
+                <h1>Portfolio</h1>
+                <a href="https://github.com/RayyanPanja/Portfolio" target="_blank"><i class="fa fa-github">Available on
+                        Github</i></a>
+            </div>
+
+        </div>
+    </section>
+    <section id="education" class="education">
+        <div class="heading">
+            <h1>Education</h1>
+            <p>I Graduated From Noble Institute Of Technology Through GTU(Gujarat Technological University) on Date:- /
+                /2023 with an CPI of 8.45 <a href="https://www.gtu.ac.in/">Go Check Out About GTU</a></p>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="header">
+            <h1>Contact</h1>
+        </div>
+        <div class="details">
+            <a href="mailto:illumi2701@gmail.com" class="email">illumi2701@gmail.com</a><br>
+            <a href="tel:+91 9601786974">+91 9601786974</a>
+            <address>Turak Chora Old Patel Wada, Veraval-362265, Gujarat, India</address>
+        </div>
+    </footer>
 
 </body>
 <script src="assets/javascript/main.js"></script>
 <script src="assets/javascript/animate.js"></script>
-
 </html>

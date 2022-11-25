@@ -10,14 +10,13 @@
     position: relative;
     background: var(--primary-clr);
 }
-
 .hero-img {
     position: absolute;
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: 90vh;
     opacity: 0.2;
-    top: 0;
-    left: 0;
+    top: 5%;
+    right: 5%;
     pointer-events: none;
 }
 
@@ -38,23 +37,24 @@
 /* Hero Section...Ends */
 
 /* About Me... */
-.heading {
+.about .heading {
     position: absolute;
     left: 20%;
     top: 30%;
 }
 
-.heading h1 {
+.about .heading h1 {
     font-size: 5rem;
 }
 
-.heading p {
+.about .heading p {
     width: 55%;
 }
 
-.heading p::first-letter {
+.about .heading p::first-letter {
     font-size: 30px;
     color: var(--accent-clr);
+    font-family: cursive;
 }
 
 .social {
@@ -62,22 +62,168 @@
     gap: 20px;
     align-items: center;
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 20%;
 }
-.social-link{
+
+.social-link {
     padding: 5px;
 }
-.social i{
+
+.social i {
     font-size: 30px;
     transition: all 500ms;
     border: 3px solid var(--secondary-clr);
     border-radius: 50%;
     padding: 10px;
 }
-.social i:hover{
+
+.social i:hover {
     color: var(--accent-clr);
 }
 
+#title {
+    display: flex;
+}
 
 /* About Me...Ends */
+/* Skills... */
+.skills .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills .heading h1 {
+    font-size: 5rem;
+}
+
+.skill-set {
+    border-radius: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.skill {
+    width: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill p {
+    font-size: 20px;
+}
+
+.skill:hover {
+    transform: translateY(-30px);
+    font-size: 20px;
+    color: black;
+}
+
+.skill:hover:nth-child(1) {
+    background: orangered;
+}
+
+.skill:hover:nth-child(2) {
+    background: #0004ff;
+}
+
+.skill:hover:nth-child(3) {
+    background: yellow;
+}
+
+.skill:hover:nth-child(5) {
+    background: violet;
+}
+
+.skill:hover:nth-child(6) {
+    background: #0004ffbd;
+}
+
+.skill:hover:nth-child(7) {
+    background: orange;
+}
+
+/* Projects... */
+.projects .heading {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects .heading h1 {
+    font-size: 4rem;
+}
+
+.project-grid{
+    margin-top: 5%;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.project-details{
+    position: relative;
+    width: 100%;
+    height: 58%;
+    padding: 5px;
+    background: #efefef1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.project-details h1 , .project-details a{
+    z-index: 99;
+}
+.project-details h1{
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+    background-color: black;
+    padding: 0 3px;
+}
+.project-details a{
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    background-color: black;
+    padding: 0 3px;
+}
+/* Projects...Ends */
+
+/* Education... */
+.education .heading {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+
+.education .heading h1 {
+    font-size: 5rem;
+}
+
+.education .heading p {
+    width: 55%;
+}
+
+.education .heading p::first-letter {
+    font-size: 30px;
+    color: var(--accent-clr);
+    font-family: cursive;
+}
+/* Education...Ends */
